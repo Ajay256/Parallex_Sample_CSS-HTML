@@ -1,0 +1,67 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, #8d8deb,#4dba4d);
+
+    /* create images variable and store images  */
+
+    --img-one : url("https://wallpapercave.com/wp/iwGphDC.jpg");
+    --img-two : url("https://wallpapercave.com/wp/ytCCix9.jpg");
+    --img-three : url("https://wallpapercave.com/wp/E5G9SIw.jpg");
+    --img-four : url("https://wallpapercave.com/wp/KPMwQrl.jpg");
+    --img-five : url("https://wallpapercave.com/wp/MsDREkd.jpg");
+
+}
+
+/* header and footer style  */
+.header-footer{
+    width: 100%;
+    height: 90vh;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 80px;
+
+    background-image: url("https://wallpapercave.com/wp/wp4825846.jpg");
+    background-position: 50% 50%;
+    background-size:cover;
+}
+
+/* parallex effect add on images and other design  */
+
+section{
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    outline: 1px solid #222;
+
+}
+
+/* give the images according to child  */
+
+section:nth-child(2){
+    background-image: var(--img-one);
+}
+
+section:nth-child(3){
+    background-image: var(--img-two);
+}
+
+section:nth-child(4){
+    background-image: var(--img-three);
+}
+
+section:nth-child(5){
+    background-image: var(--img-four);
+}
+
+section:nth-child(6){
+    background-image: var(--img-five);
+}
